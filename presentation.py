@@ -9,8 +9,8 @@ data['DatumTid'] = pd.to_datetime(data['DatumTid'], format='%Y-%m-%d %H:%M:%S')
 
 data = data[['DatumTid', 'Lufttemperatur']]
 
-start_date = st.date_input('Select a start date')
-end_date = st.date_input('Select an end date')
+start_date = st.date_input('Select a start date', pd.to_datetime('1993-01-01'))
+end_date = st.date_input('Select an end date', pd.to_datetime('1993-12-31'))
 
 data_1993 = data[(data['DatumTid'] >= str(start_date)) & (data['DatumTid'] <= str(end_date))]
 
