@@ -9,3 +9,9 @@ pip install ipykernel
 ```bash
 pip install streamlit
 ```
+
+Start streamlit app by running:
+
+```bash
+streamlit run presentation.py
+```
